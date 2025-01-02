@@ -1295,6 +1295,9 @@ importers:
         version: 0.2.4(@goat-sdk/core@0.3.8(bufferutil@4.0.8)(encoding@0.1.13)(typescript@5.6.3)(utf-8-validate@5.0.10))(viem@2.21.53(bufferutil@4.0.8)(typescript@5.6.3)(utf-8-validate@5.0.10)(zod@3.23.8))
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -4790,6 +4793,28 @@ packages:
   '@goat-sdk/plugin-polymarket@0.3.5':
     resolution: {integrity: sha512-dKeJrG6095x/+CMapjEv7Tu8YYHip1Lyg29byPn6Wre6ZHrv41wlqBNU+xSAFuadLwru0pSo605UN3yFf4M6Pg==}
 =======
+  '@goat-sdk/plugin-farcaster@0.1.0':
+    resolution: {integrity: sha512-1SXl0J/IW2iuYnK3v5punOK3jqIqzdd2MKmMJo0rTXm8ZamvKaJKQAAr3QkmichQgWPzmmZPO8w6fIDCeFWUzQ==}
+    peerDependencies:
+      '@goat-sdk/core': 0.4.3
+
+  '@goat-sdk/plugin-polymarket@0.3.5':
+    resolution: {integrity: sha512-dKeJrG6095x/+CMapjEv7Tu8YYHip1Lyg29byPn6Wre6ZHrv41wlqBNU+xSAFuadLwru0pSo605UN3yFf4M6Pg==}
+    peerDependencies:
+      '@goat-sdk/core': 0.4.3
+      viem: 2.21.49
+
+  '@goat-sdk/plugin-uniswap@0.2.4':
+    resolution: {integrity: sha512-ZKTGi8TGS3tuQOAusLkMoimu6zPJwnmBitgBruvAaRZ0bNBFGskCMU+xzbKZ+2s+dFdr6hlu+oMSN8flisIH5w==}
+    peerDependencies:
+      '@goat-sdk/core': 0.4.3
+      viem: 2.21.49
+
+  '@goat-sdk/wallet-evm@0.2.3':
+    resolution: {integrity: sha512-0bRZwvoQfDPA8voBNs/xjaLv+OQDH6tWMcJqG1SqzTk6KsTlB7GPP5uKrpr44RS8Qsoanz7+DyNRlVonz0SeYQ==}
+    peerDependencies:
+      '@goat-sdk/core': 0.4.3
+
   '@goat-sdk/plugin-farcaster@0.1.0':
     resolution: {integrity: sha512-1SXl0J/IW2iuYnK3v5punOK3jqIqzdd2MKmMJo0rTXm8ZamvKaJKQAAr3QkmichQgWPzmmZPO8w6fIDCeFWUzQ==}
     peerDependencies:
@@ -24136,7 +24161,10 @@ snapshots:
       zod: 3.23.8
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
   '@goat-sdk/plugin-farcaster@0.1.0(@goat-sdk/core@0.3.8(bufferutil@4.0.8)(encoding@0.1.13)(typescript@5.6.3)(utf-8-validate@5.0.10))':
     dependencies:
       '@goat-sdk/core': 0.3.8(bufferutil@4.0.8)(encoding@0.1.13)(typescript@5.6.3)(utf-8-validate@5.0.10)
@@ -24160,6 +24188,9 @@ snapshots:
       viem: 2.21.53(bufferutil@4.0.8)(typescript@5.6.3)(utf-8-validate@5.0.10)(zod@3.23.8)
       zod: 3.23.8
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   '@goat-sdk/wallet-evm@0.2.3(@goat-sdk/core@0.3.8(bufferutil@4.0.8)(encoding@0.1.13)(typescript@5.6.3)(utf-8-validate@5.0.10))(bufferutil@4.0.8)(typescript@5.6.3)(utf-8-validate@5.0.10)':
     dependencies:
