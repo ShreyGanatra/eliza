@@ -1,12 +1,11 @@
 import type { Plugin } from "@elizaos/core";
 import { getOnChainActions } from "./actions";
-import { erc20, USDC } from "@goat-sdk/plugin-erc20";
-// import { sendETH } from "@goat-sdk/core";
+import { erc20, PEPE, USDC } from "@goat-sdk/plugin-erc20";
 import {sendETH} from "@goat-sdk/wallet-evm";
 import { getWalletClient, getWalletProvider } from "./wallet";
 import {polymarket} from "@goat-sdk/plugin-polymarket";
-import {UniswapPlugin} from "@goat-sdk/plugin-uniswap";
-// import {farcaster} from "@goat-sdk/plugin-farcaster";
+import {uniswap} from "@goat-sdk/plugin-uniswap";
+import {farcasterPlugin} from "@goat-sdk/plugin-farcaster";
 
 async function createGoatPlugin(
     getSetting: (key: string) => string | undefined
@@ -18,7 +17,7 @@ async function createGoatPlugin(
         // See all available plugins at https://ohmygoat.dev/chains-wallets-plugins#plugins
         plugins: [
             sendETH(),
-            erc20({ tokens: [USDC] })],
+            erc20({ tokens: [USDC,PEPE] })],
     });
 
     return {
