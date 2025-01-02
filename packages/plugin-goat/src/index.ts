@@ -16,14 +16,9 @@ async function createGoatPlugin(
         wallet: walletClient,
         // Add plugins here based on what actions you want to use
         // See all available plugins at https://ohmygoat.dev/chains-wallets-plugins#plugins
-<<<<<<< Updated upstream
         plugins: [
             sendETH(),
             erc20({ tokens: [USDC] })],
-=======
-        plugins: [sendETH(), erc20({ tokens: [USDC] },UniswapPlugin()),
-       ],
->>>>>>> Stashed changes
     });
 
     return {
