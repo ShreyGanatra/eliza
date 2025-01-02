@@ -4,6 +4,9 @@ import { erc20, USDC } from "@goat-sdk/plugin-erc20";
 // import { sendETH } from "@goat-sdk/core";
 import {sendETH} from "@goat-sdk/wallet-evm";
 import { getWalletClient, getWalletProvider } from "./wallet";
+import {polymarket} from "@goat-sdk/plugin-polymarket";
+import {UniswapPlugin} from "@goat-sdk/plugin-uniswap";
+// import {farcaster} from "@goat-sdk/plugin-farcaster";
 
 async function createGoatPlugin(
     getSetting: (key: string) => string | undefined
@@ -13,9 +16,14 @@ async function createGoatPlugin(
         wallet: walletClient,
         // Add plugins here based on what actions you want to use
         // See all available plugins at https://ohmygoat.dev/chains-wallets-plugins#plugins
+<<<<<<< Updated upstream
         plugins: [
             sendETH(),
             erc20({ tokens: [USDC] })],
+=======
+        plugins: [sendETH(), erc20({ tokens: [USDC] },UniswapPlugin()),
+       ],
+>>>>>>> Stashed changes
     });
 
     return {
